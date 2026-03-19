@@ -23,5 +23,5 @@ from sklearn.ensemble import AdaBoostClassifier # Adaboost分类器 -> 集成学
 from sklearn.metrics import  accuracy_score # 模型评估 -> 正确率
 
 # 获取数据集
-df_wine  = pd.read_csv('./data/红酒品质分类.csv')
+df_wine  = pd.read_csv('../day08/data/红酒品质分类.csv')
 df_wine.info ()
