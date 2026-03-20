@@ -5,7 +5,7 @@
     概述:
         贝叶斯:仅仅依赖 概率 就可以进行分类的一种机器学习算法.朴素:不考虑特征之间的关联性，即:特征间都是相互独立的.原始: P(AB)= P(A)* P(B|A) = P(B) * P(A|B)加入朴素后:P(AB)=P(A)*P(B)
     细节:
-        因为我们分词要用到jieba分词器，记得先装一下，例如:pipinstalljieba
+        因为我们分词要用到jieba分词器，记得先装一下，例如:pip install jieba
 """
 
 
@@ -31,7 +31,7 @@ y = df['labels']
 # comment_list = [jieba.lcut(line) for line in df['内容']]
 # 创建词频统计对象
 comment_list = [','.join(jieba.lcut(line)) for line in df['内容']]
-print(comment_list)
+# print(comment_list)
 
 # 演示字符串的join()函数用法.
 # my_list = ['aa','bb','cc']
@@ -52,7 +52,7 @@ transfer = CountVectorizer(stop_words=stopword_list)
 x = transfer.fit_transform(comment_list).toarray()
 
 #看一下我们13条评论，切词，且删除 停用词后，一共剩下多少个词了.
-print(transfer.get_feature_names_out()) #37个词，即:13条评论，切词，且删除 停用词后，一共剩下多少个词了.
+# print(transfer.get_feature_names_out()) #37个词，即:13条评论，切词，且删除 停用词后，一共剩下多少个词了.
 
 # 创建训练集和测试集
 # 因为就 13条数据，我们把前10条当训练集，后三条当测试集。
