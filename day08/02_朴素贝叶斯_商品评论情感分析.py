@@ -11,7 +11,6 @@
 
 import pandas as pd         # 数据处理
 import numpy as np
-import matplotlib.pyplot as plt
 import jieba             # 分词包
 from  sklearn.feature_extraction.text import CountVectorizer   # 词频统计，把评论内容 转成 词频矩阵
 from sklearn.metrics import accuracy_score
