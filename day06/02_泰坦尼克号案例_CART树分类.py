@@ -3,7 +3,7 @@
 """
 import pandas as pd
 from sklearn.model_selection import  train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier # 分类树
 from sklearn.metrics import classification_report # 评价报告
 import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree # 绘制树形图

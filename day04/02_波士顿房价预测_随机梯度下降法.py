@@ -37,7 +37,7 @@ from sklearn.model_selection import train_test_split   #数据集划分
 from sklearn.linear_model import LinearRegression      #正规方程的回归模型
 from sklearn.linear_model import SGDRegressor          #梯度下降的回归模型
 from sklearn.metrics import mean_squared_error, root_mean_squared_error, mean_absolute_error  # 均方误差评估
-from sklearn.linear_model import Ridge, RidgeCV
+from sklearn.linear_model import Ridge, RidgeCV      # 岭回归，岭回归模型
 
 # 加载数据
 import pandas as pd

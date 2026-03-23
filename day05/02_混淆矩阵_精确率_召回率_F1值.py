@@ -26,8 +26,8 @@
 """
 
 import pandas as pd
-from sklearn.metrics import confusion_matrix,precision_score,recall_score,f1_score  # 混淆矩阵 评估
-
+# confusion_matrix:混淆矩阵 precision_score:精确率 recall_score:召回率 f1_score:F1值
+from sklearn.metrics import confusion_matrix,precision_score,recall_score,f1_score
 # 需求:已知有10个样本，6个恶性肿瘤(正例)，4个良性肿瘤(反例).
 # #模型A预测结果为:预测对了3个恶性肿瘤，预测对了4个良性肿瘤
 # #模型B预测结果为:预测对了6个恶性肿瘤，预测对了1个良性肿瘤

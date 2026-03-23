@@ -23,7 +23,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from  sklearn.tree import DecisionTreeClassifier # 引入 决策树分类器
 from sklearn.ensemble import  RandomForestClassifier # 引入 随机森林分类器
-from sklearn.model_selection import  GridSearchCV # 引入 网格搜索
+from sklearn.model_selection import GridSearchCV # 引入 网格搜索
 
 # 1. 加载数据
 df = pd.read_csv("./data/train.csv")

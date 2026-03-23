@@ -151,13 +151,13 @@ def dm04_l1_regularization():
     # 特征工程： polynomial
     # estmitor = LinearRegression()
     # 训练
-    estmitor = Lasso(alpha=0.2) # Lasso 正则化系数 默认1.0
-    estmitor.fit(X3, y)
-    # print('权重：', estmitor.coef_)
-    # print('截距：', estmitor.intercept_)
+    estiamtor = Lasso(alpha=0.2) # Lasso 正则化系数 默认1.0
+    estiamtor.fit(X3, y)
+    # print('权重：', estiamtor.coef_)
+    # print('截距：', estiamtor.intercept_)
 
     # 预测
-    y_predict = estmitor.predict(X3)
+    y_predict = estiamtor.predict(X3)
 
     # 评估
     print('均方误差：', mean_squared_error(y, y_predict))
@@ -188,13 +188,13 @@ def dm05_l2_regularization():
     # estmitor = LinearRegression()
     # 训练
     # estmitor = Lasso(alpha=0.2) # Lasso 正则化系数 默认1.0
-    estmitor = Ridge(alpha=0.2)
-    estmitor.fit(X3, y)
-    # print('权重：', estmitor.coef_)
-    # print('截距：', estmitor.intercept_)
+    estiamtor = Ridge(alpha=0.2)
+    estiamtor.fit(X3, y)
+    # print('权重：', estiamtor.coef_)
+    # print('截距：', estiamtor.intercept_)
 
     # 预测
-    y_predict = estmitor.predict(X3)
+    y_predict = estiamtor.predict(X3)
 
     # 评估
     print('均方误差：', mean_squared_error(y, y_predict))
